@@ -1,0 +1,52 @@
+{
+  "groups": [
+    {
+      "name": "path",
+      "type": "com.example.demo.controller.FaceController",
+      "sourceType": "com.example.demo.controller.FaceController"
+    }
+  ],
+  "properties": [
+    {
+      "name": "path.director-name",
+      "type": "java.lang.String",
+      "sourceType": "com.example.demo.controller.FaceController"
+    },
+    {
+      "name": "path.face-arc-detect",
+      "type": "com.example.demo.controller.FaceArcDetect",
+      "sourceType": "com.example.demo.controller.FaceController"
+    },
+    {
+      "name": "path.face-byte-string",
+      "type": "com.example.demo.server.FaceByteString",
+      "sourceType": "com.example.demo.controller.FaceController"
+    },
+    {
+      "name": "path.face-img-base",
+      "type": "com.example.demo.server.FaceImgBase",
+      "sourceType": "com.example.demo.controller.FaceController"
+    },
+    {
+      "name": "path.face-mapper",
+      "type": "com.example.demo.dao.FaceMapper",
+      "sourceType": "com.example.demo.controller.FaceController"
+    },
+    {
+      "name": "path.request",
+      "type": "javax.servlet.http.HttpServletRequest",
+      "sourceType": "com.example.demo.controller.FaceController"
+    },
+    {
+      "name": "path.user",
+      "type": "com.example.demo.entity.User",
+      "sourceType": "com.example.demo.controller.FaceController"
+    },
+    {
+      "name": "path.user-http",
+      "type": "com.example.demo.entity.UserHttp",
+      "sourceType": "com.example.demo.controller.FaceController"
+    }
+  ],
+  "hints": []
+}
