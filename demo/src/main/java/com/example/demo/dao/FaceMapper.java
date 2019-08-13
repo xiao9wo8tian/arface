@@ -24,9 +24,13 @@ public interface FaceMapper {
     @Select("select * from user where userName = #{userName}")
     public List<User> selectUserByName(String userName);
 
-    @Insert("insert into user(userName,userFace,userDevice,userPasswd,userLastTime) values (#{userName},#{userFace},#{userDevice},#{userPasswd},#{userLastTime})")
-    public void addUser(@Param("userName") String userName, @Param("userFace") String path,@Param("userDevice") String userDevice,
-                        @Param("userPasswd") String userPasswd,@Param("userLastTime") String userLastTime);
+    @Insert("insert into user(userName,userFace,userDevice,userPasswd,userLastTime) " +
+            "values (#{userName},#{userFace},#{userDevice},#{userPasswd},#{userLastTime})")
+    public boolean addUser(@Param("userName") String userName,
+                           @Param("userFace") String userFace,
+                           @Param("userDevice") String userDevice,
+                           @Param("userPasswd") String userPasswd,
+                           @Param("userLastTime") String userLastTime);
 
     @Update("update user set userName=#{userName},userFace=#{userFace} where id=#{id}")
     public void updateUser(User user);

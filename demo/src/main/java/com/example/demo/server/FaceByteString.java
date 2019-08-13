@@ -4,6 +4,10 @@ package com.example.demo.server;
 import org.apache.ibatis.annotations.Mapper;
 import org.springframework.web.bind.annotation.RestController;
 
+
+/*
+* 人脸特征通过字符写入
+* */
 @Mapper
 @RestController
 public class FaceByteString {

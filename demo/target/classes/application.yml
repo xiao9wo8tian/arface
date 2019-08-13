@@ -9,3 +9,6 @@ spring:
 path:
   directorName: C:\Users\Administrator\Desktop
 
+
+server:
+  port: 8888

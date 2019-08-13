@@ -12,10 +12,11 @@ import org.springframework.web.bind.annotation.RestController;
 @RestController
 public class UserHttp {
     public String userName;
-    public String userPasswd;
-    public String userDevice;
-    public String userLastTime;
     public String userFace;
-    public String userPath;
+    public String userDevice;
+    public String userPasswd;
+    public String userLastTime;
+    public String userId;
+
 
 }
